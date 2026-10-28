@@ -35,16 +35,17 @@ variable "k8s_nodes" {
     cores    = number
     memory   = number
     disk_gb  = number
+	vm_id    = number
   }))
 
   default = {
     "k8s-master" = {
       ip      = "<enter_ip>"
       role    = "control-plane"
-      cores   = limits
-      memory  = limits
-      disk_gb = limits
-			vm_id   = limits
+      cores   = <limits>
+      memory  = <limits>
+      disk_gb = <limits>
+	  vm_id   = <limits>
     }
   }
 }
