@@ -16,7 +16,7 @@ variable "proxmox_node" {
 
 variable "template_vm_id" {
   type    = number
-  default = 9000
+  default = <enter_your_template_vm_id>
 }
 
 variable "ssh_public_key" {
